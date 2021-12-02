@@ -1,9 +1,14 @@
 * {
   margin: 0;
+  font-size: 10px;
 }
+
 #header-container {
   display: flex;
-  align-items: flex-start;
-  padding: 5px 15px;
+  padding: 0.5rem 1.5rem;
   background-color: rgb(50, 167, 145);
+}
+
+#trybewarts-header-logo {
+  width: 6rem;
 }
