@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+}
+#header-container {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px 15px;
+  background-color: rgb(50, 167, 145);
+}
