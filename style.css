@@ -30,3 +30,7 @@
   width: 675px;
   flex-direction: column;
 }
+
+#aside-image {
+  height: 500px;
+}
