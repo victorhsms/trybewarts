@@ -25,10 +25,11 @@
   display: flex;
 }
 
-#evalution-form {
+#evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  gap: 2rem;
 }
 
 #aside-image {
@@ -41,4 +42,20 @@
 
 #email-house {
   display: flex;
+  align-items: center;
+}
+
+#family-content {
+  display: flex;
+}
+
+#family {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: center;
 }
