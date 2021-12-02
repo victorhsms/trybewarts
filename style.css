@@ -102,3 +102,12 @@
   align-items: center;
   gap: 0.5rem;
 }
+
+/*    FOOTER */
+#footer-conteiner {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: wheat;
+  padding: 30px;
+}
