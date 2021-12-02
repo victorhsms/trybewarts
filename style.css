@@ -85,4 +85,14 @@
 
 .radio-rate {
   display: flex;
+  align-items: center;
+}
+
+#textarea-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#coment {
+  resize: none;
 }
