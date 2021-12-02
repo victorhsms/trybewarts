@@ -15,3 +15,15 @@ function login() {
 }
 
 validaBotao.addEventListener('click', login);
+
+function buttonEnable(event) {
+  const buttonForm = document.querySelector('#submit-btn');
+  if (event.target.checked) {
+    buttonForm.disabled = false;
+  } else {
+    buttonForm.disabled = true;
+  }
+}
+
+const infoLabel = document.querySelector('#agreement');
+infoLabel.addEventListener('change', buttonEnable);
