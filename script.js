@@ -69,9 +69,11 @@ const harryPotter = {
     event.preventDefault();
     const uOrdened = document.querySelector('#ul-container');
     const formContent = document.querySelector('#form-container');
+    const titlePag = document.querySelector('#evaluation-form h1');
+    titlePag.style.display = 'none';
     formContent.style.display = 'none';
     uOrdened.innerHTML = '';
-    uOrdened.style.display = 'block';
+    uOrdened.style.display = 'flex';
     const objeto = harryPotter.callObject();
     uOrdened.innerHTML = `
     <li>Nome: ${objeto.nome} ${objeto.sNome}</li>
