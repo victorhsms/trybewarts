@@ -16,8 +16,8 @@ function login() {
 
 validaBotao.addEventListener('click', login);
 
+const buttonForm = document.querySelector('#submit-btn');
 function buttonEnable(event) {
-  const buttonForm = document.querySelector('#submit-btn');
   if (event.target.checked) {
     buttonForm.disabled = false;
   } else {
@@ -39,3 +39,50 @@ function contador(e) {
 }
 
 textArea.addEventListener('keyup', contador);
+
+const harryPotter = {
+  optionContent() {
+    const materias = document.querySelectorAll('input[class=subject]:checked');
+    const values = [];
+    for (let i = 0; i < materias.length; i += 1) {
+      values.push(materias[i].value);
+    }
+    return values.join(', ');
+  },
+
+  callObject() {
+    const casa = document.querySelector('#house');
+    const objeto = {
+      nome: document.querySelector('#input-name').value,
+      sNome: document.querySelector('#input-lastname').value,
+      email: document.querySelector('#input-email').value,
+      casaSelected: casa.options[casa.selectedIndex].value,
+      familia: document.querySelector('input[name=family]:checked').value,
+      conteudo: harryPotter.optionContent(),
+      avaliacao: document.querySelector('input[name=rate]:checked').value,
+      comment: document.querySelector('#textarea').value,
+    };
+    return objeto;
+  },
+
+  init(event) {
+    event.preventDefault();
+    const uOrdened = document.querySelector('#ul-container');
+    const formContent = document.querySelector('#form-container');
+    formContent.style.display = 'none';
+    uOrdened.innerHTML = '';
+    uOrdened.style.display = 'block';
+    const objeto = harryPotter.callObject();
+    uOrdened.innerHTML = `
+    <li>Nome: ${objeto.nome} ${objeto.sNome}</li>
+    <li>Email: ${objeto.email}</li>
+    <li>Casa: ${objeto.casaSelected}</li>
+    <li>Família: ${objeto.familia}</li>
+    <li>Matérias: ${objeto.conteudo}</li>
+    <li>Avaliação: ${objeto.avaliacao}</li>
+    <li>Observações: ${objeto.comment}</li>
+    `;
+  },
+};
+
+buttonForm.addEventListener('click', harryPotter.init);

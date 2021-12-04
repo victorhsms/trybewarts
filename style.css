@@ -111,6 +111,10 @@
   bottom: 5px;
 }
 
+#ul-container {
+  display: none;
+}
+
 /*    FOOTER */
 #footer-conteiner {
   display: flex;
