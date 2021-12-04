@@ -16,23 +16,27 @@
     <h1 id="trybewarts-header-title">Trybewarts</h1>
 
     <form class="trybewarts-login">
-      <input type="email" name="email" placeholder="Email">
-      <input type="password" name="password" placeholder="Senha">
-      <button id="login-button">Entrar</button>
+      <input class="header-login-password" type="email" name="email" placeholder="Email">
+      <input class="header-login-password" type="password" name="password" placeholder="Senha">
+      <button id="login-button" class="header-login-password">Entrar</button>
     </form>
 
   </header>
   <main id="main-conteiner">
+    
     <form id="evaluation-form">
+      <h1>Formulário de Avaliação</h1>
       <div id="form-container">
         <section id="name-lastname">
-          <input type="text" id="input-name" placeholder="Nome">
-          <input type="text" id="input-lastname" placeholder="Sobrenome">
+          
+          <input class="first-wrapper" type="text" id="input-name" placeholder="Nome">
+          <input class="first-wrapper" type="text" id="input-lastname" placeholder="Sobrenome">
         </section>
         <section id="email-house">
-          <input type="email" id="input-email" placeholder="Email">
-          <label for="house">Casa:</label>
-          <select name="house" id="house">
+          
+          <input class="first-wrapper" type="email" id="input-email" placeholder="Email">
+          <label id="casa" for="house">Casa:</label>
+          <select class="first-wrapper" name="house" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
             <option id="corvinode-house" value="Corvinode">Corvinode</option>
@@ -142,7 +146,7 @@
       <ul id="ul-container">
 
       </ul>
-      
+
     </form>
     <aside>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">

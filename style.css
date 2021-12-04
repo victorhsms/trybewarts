@@ -3,6 +3,10 @@
   font-size: 10px;
 }
 
+body {
+  background-color: rgb(239, 239, 239);
+}
+
 /*    HEADER */
 .header {
   display: flex;
@@ -18,6 +22,7 @@
 
 .trybewarts-login {
   display: flex;
+  gap: 5px;
 }
 
 #trybewarts-header-title {
@@ -25,9 +30,28 @@
   color: white;
 }
 
+
+.header-login-password {
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#login-button {
+  background-color: rgb(81, 59, 131);
+  color: white;
+  padding: 0 55px;
+}
+
+
 /*  MAIN */
 #main-conteiner {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 15px;
 }
 
 #evaluation-form {
@@ -37,22 +61,51 @@
   gap: 2rem;
 }
 
+#evaluation-form > h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
 #name-lastname {
   display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px;
 }
 
 #email-house {
   display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 5px;
+  margin: 10px;
+}
+
+.first-wrapper {
+  border: 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: white;
+  flex-grow: 2;
+}
+
+#casa {
+  font-size: 13px;
 }
 
 #family-content {
   display: flex;
-  gap: 50px;
+  padding: 30px 40px;
+  margin: 20px 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  justify-content: space-between;
 }
 
 #family {
@@ -61,9 +114,17 @@
   gap: 1rem;
 }
 
+#label-family {
+  font-size: 18px;
+}
+
 .radio-buttons {
   display: flex;
   align-items: center;
+}
+
+.radio-buttons > input , label {
+  font-size: 18px;
 }
 
 #checkbox-content {
@@ -82,6 +143,12 @@
 #rate {
   display: flex;
   gap: 10px;
+  padding: 15px;
+  justify-content: center;
+}
+
+#label-rate {
+  font-size: 18px;
 }
 
 .radio-rate {
@@ -93,6 +160,12 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  gap: 5px;
+}
+
+.textarea {
+  font-size: 16px;
+  padding-top: 15px;
 }
 
 #textarea {
@@ -103,12 +176,30 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin: 20px 0;
+}
+
+#label-infos {
+  font-size: 13px;
 }
 
 #counter {
   position: absolute;
   right: 5px;
   bottom: 5px;
+  font-size: 15px;
+}
+
+#submit-btn {
+  background-color: rgb(81, 59, 131);
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: 0;
+  padding: 15px;
+  border-radius: 12px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #ul-container {
@@ -117,9 +208,15 @@
 
 /*    FOOTER */
 #footer-conteiner {
-  display: flex;
-  justify-content: center;
-  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(27, 27, 27);
   color: wheat;
-  padding: 30px;
+  padding: 15px;
+}
+
+#footer-conteiner h3 {
+  font-size: 18px;
 }
