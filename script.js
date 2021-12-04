@@ -27,3 +27,15 @@ function buttonEnable(event) {
 
 const infoLabel = document.querySelector('#agreement');
 infoLabel.addEventListener('change', buttonEnable);
+
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+function contador(e) {
+  const limit = 500;
+  const evento = e.target;
+  const rest = limit - evento.value.length;
+  counter.innerText = rest;
+}
+
+textArea.addEventListener('keyup', contador);
