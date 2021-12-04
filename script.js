@@ -40,6 +40,8 @@ function contador(e) {
 
 textArea.addEventListener('keyup', contador);
 
+// ref: https://github.com/tryber/sd-018-b-project-trybewarts/pull/37
+// Pegamos a ideia da organização lógica do requisito 21 do PR de Polyana Sousa e Lilian Azevedo
 const harryPotter = {
   optionContent() {
     const materias = document.querySelectorAll('input[class=subject]:checked');
